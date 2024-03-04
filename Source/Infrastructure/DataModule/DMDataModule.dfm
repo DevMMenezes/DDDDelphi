@@ -1,0 +1,28 @@
+object DMData: TDMData
+  Height = 600
+  Width = 800
+  PixelsPerInch = 120
+  object FBConnection: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Win32\Debug\' +
+        'DB.FDB'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 370
+    Top = 190
+  end
+  object FDGUIxWaitCursor: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 400
+    Top = 310
+  end
+  object FDTransaction: TFDTransaction
+    Connection = FBConnection
+    Left = 592
+    Top = 384
+  end
+end

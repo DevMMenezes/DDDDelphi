@@ -1,0 +1,14 @@
+unit IService;
+
+interface
+
+type
+  IService = interface
+    ['{7C789E1C-9DE5-4CBB-8FBA-B7B0C564A9FE}']
+    function teste;
+
+  end;
+
+implementation
+
+end.

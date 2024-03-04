@@ -1,0 +1,148 @@
+unit Main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Produto.Service, Data.DB,
+  Vcl.Grids, Vcl.DBGrids, Produto.Entity, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, DMDataModule, Datasnap.DBClient;
+
+type
+  TvMain = class(TForm)
+    btnFindAll: TButton;
+    lblNome: TLabel;
+    btnInsert: TButton;
+    btnUpdate: TButton;
+    btnDelete: TButton;
+    btnFindByID: TButton;
+    DBGridProd: TDBGrid;
+    mm: TMemo;
+    dsProd: TDataSource;
+    procedure btnFindAllClick(Sender: TObject);
+    procedure btnInsertClick(Sender: TObject);
+    procedure btnUpdateClick(Sender: TObject);
+    procedure btnDeleteClick(Sender: TObject);
+    procedure btnFindByIDClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  var
+    DSProds: TDataSource;
+    DSProdDataSet: TDataSet;
+  public
+    { Public declarations }
+  end;
+
+var
+  vMain: TvMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TvMain.btnDeleteClick(Sender: TObject);
+var
+  oProduto: TProdutoEntity;
+begin
+  oProduto := TProdutoEntity.New;
+  try
+    try
+      with oProduto do
+      begin
+        SetID(1).SetDescricao('UpdateTesteMarcelo').SetCodigoBarra('1234')
+          .SetIdCadastro('123456');
+      end;
+      TProdutoService.New.Delete(oProduto);
+    except
+      on E: Exception do
+        Application.MessageBox(PWideChar(E.Message),
+          'Mensagem do Sistema', MB_OK);
+    end;
+  finally
+    oProduto.Free;
+  end;
+end;
+
+procedure TvMain.btnFindAllClick(Sender: TObject);
+begin
+  DSProd.DataSet := TProdutoService.New.FindAll();
+  DBGridProd.DataSource := DSProd;
+end;
+
+procedure TvMain.btnFindByIDClick(Sender: TObject);
+begin
+  DSProds.DataSet.First;
+  mm.Clear;
+  while not DSProds.DataSet.Eof do
+  begin
+    mm.Lines.Add(DSProds.DataSet.FieldByName('id').ASString + ' - ' +
+      DSProds.DataSet.FieldByName('descricao').ASString);
+    DSProds.DataSet.Next;
+  end;
+  DSProds.DataSet.First;
+end;
+
+procedure TvMain.btnInsertClick(Sender: TObject);
+var
+  oProduto: TProdutoEntity;
+begin
+  oProduto := TProdutoEntity.New;
+  try
+    try
+      with oProduto do
+      begin
+        SetDescricao('TesteMarcelo').SetCodigoBarra('1234')
+          .SetIdCadastro('123456');
+      end;
+      TProdutoService.New.Insert(oProduto);
+    except
+      on E: Exception do
+        Application.MessageBox(PWideChar(E.Message),
+          'Mensagem do Sistema', MB_OK);
+    end;
+  finally
+    oProduto.Free;
+  end;
+end;
+
+procedure TvMain.btnUpdateClick(Sender: TObject);
+var
+  oProduto: TProdutoEntity;
+begin
+  oProduto := TProdutoEntity.New;
+  try
+    try
+      with oProduto do
+      begin
+        SetID(1).SetDescricao('UpdateTesteMarcelo').SetCodigoBarra('1234')
+          .SetIdCadastro('123456');
+      end;
+      TProdutoService.New.Update(oProduto);
+    except
+      on E: Exception do
+        Application.MessageBox(PWideChar(E.Message),
+          'Mensagem do Sistema', MB_OK);
+    end;
+  finally
+    oProduto.Free;
+  end;
+end;
+
+procedure TvMain.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  FreeAndNil(DSProds);
+  FreeAndNil(DSProdDataSet);
+end;
+
+procedure TvMain.FormCreate(Sender: TObject);
+begin
+  DSProds := TDataSource.Create(nil);
+  DSProdDataSet := TDataSet.Create(nil);
+end;
+
+end.

@@ -1,0 +1,12 @@
+unit IService;
+
+interface
+
+type
+  IService = interface
+
+  end;
+
+implementation
+
+end.

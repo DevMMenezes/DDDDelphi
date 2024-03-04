@@ -1,0 +1,22 @@
+program DDDDelphi;
+
+uses
+  Vcl.Forms,
+  Main in 'Source\Main.pas' {vMain},
+  IProduto.Entity in 'Source\Domain\Entities\IProduto.Entity.pas',
+  Produto.Entity in 'Source\Infrastructure\Entities\Produto.Entity.pas',
+  EProduto.Enum in 'Source\Domain\Enums\EProduto.Enum.Pas',
+  IServiceBase in 'Source\Domain\Extensions\IServiceBase.pas',
+  IProduto.Service in 'Source\Domain\Services\IProduto.Service.pas',
+  Produto.Service in 'Source\Infrastructure\Services\Produto.Service.pas',
+  ServiceBase in 'Source\Infrastructure\Services\ServiceBase.pas',
+  DMDataModule in 'Source\Infrastructure\DataModule\DMDataModule.pas' {DM: TDataModule};
+
+begin
+
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TvMain, vMain);
+  Application.Run;
+
+end.

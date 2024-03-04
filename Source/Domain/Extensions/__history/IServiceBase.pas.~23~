@@ -1,0 +1,20 @@
+unit IServiceBase;
+
+interface
+
+uses
+  Data.DB;
+
+type
+  IService = interface
+    ['{159ABEFF-862C-46B8-957D-D21D27BBD19E}']
+    function FindAll(): TDataSet;
+    function FindByID(ADataSet: TDataSet): TDataSet;
+    function Insert(): IService;
+    function Update(): IService;
+    function Delete(): IService;
+  end;
+
+implementation
+
+end.

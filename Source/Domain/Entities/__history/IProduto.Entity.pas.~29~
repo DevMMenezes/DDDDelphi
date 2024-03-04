@@ -1,0 +1,25 @@
+unit IProduto.Entity;
+
+interface
+
+type
+  IProduto = interface
+    ['{1F2EAC18-FB82-4576-A590-AF708CE17C7D}']
+  end;
+
+  TProduto = class(TInterfacedObject, IProduto)
+
+    function GetID: IProduto;
+    function GetDescricao: IProduto;
+    function GetCodigoBarra: IProduto;
+    function GetIdCadastro: IProduto;
+
+    function SetID: IProduto;
+    function SetDescricao: IProduto;
+    function SetCodigoBarra: IProduto;
+    function SetIdCadastro: IProduto;
+  end;
+
+implementation
+
+end.

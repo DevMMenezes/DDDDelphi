@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/01/28 11:24:43.000.306,=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/02/14 05:56:09.000.980,=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/02/14 05:59:51.000.889,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Main.dfm=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/02/14 05:59:51.000.889,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Main.pas=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/02/14 05:59:57.000.132,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Project1.dproj=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/02/14 06:00:07.000.836,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\DDDDelphi.dproj=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Project1.dproj</Transaction>
+    <Transaction>2024/02/18 19:55:53.000.137,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 19:58:29.000.114,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Entities\IProduto.Entity.pas</Transaction>
+    <Transaction>2024/02/18 20:14:35.000.940,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 20:15:25.000.067,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Enums\EProduto.Enum.pas</Transaction>
+    <Transaction>2024/02/18 20:17:47.000.409,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 20:19:56.000.524,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Services\IProduto.Service.pas</Transaction>
+    <Transaction>2024/02/18 20:44:40.000.859,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 20:45:17.000.131,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Extensions\IService.pas</Transaction>
+    <Transaction>2024/02/18 20:50:02.000.162,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Extensions\IService.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Extensions\IServiceBase.pas</Transaction>
+    <Transaction>2024/02/18 20:55:02.000.913,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 20:56:04.000.345,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Entities\Produto.Entity.pas</Transaction>
+    <Transaction>2024/02/18 21:24:36.000.827,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Entities\Produto.Entity.pas</Transaction>
+    <Transaction>2024/02/18 21:27:10.000.737,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Enums\EProduto.Enum.Pas</Transaction>
+    <Transaction>2024/02/18 21:27:23.000.128,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Extensions\IService.pas</Transaction>
+    <Transaction>2024/02/18 21:27:37.000.749,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Extensions\IServiceBase.pas</Transaction>
+    <Transaction>2024/02/18 21:27:50.000.408,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Services\IProduto.Service.pas</Transaction>
+    <Transaction>2024/02/18 21:46:00.000.838,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 21:46:20.000.700,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Services\Produto.Service.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 22:10:44.000.398,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 22:11:04.000.871,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Services\ServiceBase.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 22:20:15.000.383,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 22:21:01.000.246,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.dfm=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.dfm</Transaction>
+    <Transaction>2024/02/18 22:21:01.000.246,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/02/18 22:22:05.000.520,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.pas</Transaction>
+    <Transaction>2024/02/18 22:22:05.000.520,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.dfm=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.dfm</Transaction>
+    <Transaction>2024/02/18 22:37:44.000.111,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.pas</Transaction>
+    <Transaction>2024/02/18 23:06:15.000.468,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DMDataModule.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.pas</Transaction>
+    <Transaction>2024/02/18 23:06:15.000.468,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DMDataModule.dfm=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.dfm</Transaction>
+    <Transaction>2024/02/19 07:31:06.000.562,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Produto\Entities\Produto.Entity.pas</Transaction>
+    <Transaction>2024/02/19 07:31:24.000.837,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Produto\Services\Produto.Service.pas</Transaction>
+    <Transaction>2024/02/19 07:31:34.000.862,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Produto\Services\ServiceBase.pas</Transaction>
+    <Transaction>2024/02/19 07:58:44.000.509,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Produto\Services\ServiceBase.pas=</Transaction>
+    <Transaction>2024/02/19 07:59:12.000.730,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\ServiceBase.pas</Transaction>
+    <Transaction>2024/02/22 20:45:54.000.101,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\ServiceBase.pas=</Transaction>
+    <Transaction>2024/02/22 20:46:01.000.515,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Services\IProduto.Service.pas=</Transaction>
+    <Transaction>2024/02/22 20:46:36.000.065,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Extensions\IServiceBase.pas=</Transaction>
+    <Transaction>2024/02/22 20:46:53.000.053,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Services\IProduto.Service.pas</Transaction>
+    <Transaction>2024/03/01 17:02:24.000.666,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Main.pas=</Transaction>
+    <Transaction>2024/03/01 17:03:10.000.644,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Presentation\Presentation.Main.pas.pas</Transaction>
+    <Transaction>2024/03/01 17:04:13.000.337,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Presentation\Main.Presentation.pas.pas</Transaction>
+    <Transaction>2024/03/01 17:09:54.000.467,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Presentation\View\Main.View.pas</Transaction>
+    <Transaction>2024/03/01 17:34:24.000.960,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/03/01 17:34:47.000.152,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Presentation\Controller\Produto.Controller.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Source"/>
+    <File Path="Source\Domain"/>
+    <File Path="Source\Domain\Entities"/>
+    <File Path="Source\Domain\Entities\IProduto.Entity.pas"/>
+    <File Path="Source\Domain\Enums"/>
+    <File Path="Source\Domain\Enums\EProduto.Enum.Pas"/>
+    <File Path="Source\Domain\Services"/>
+    <File Path="Source\Domain\Services\IProduto.Service.pas"/>
+    <File Path="Source\Infrastructure"/>
+    <File Path="Source\Infrastructure\DataModule"/>
+    <File Path="Source\Infrastructure\DataModule\DMDataModule.pas"/>
+    <File Path="Source\Infrastructure\DataModule\DMDataModule.dfm"/>
+    <File Path="Source\Infrastructure\Produto"/>
+    <File Path="Source\Infrastructure\Produto\Entities"/>
+    <File Path="Source\Infrastructure\Produto\Entities\Produto.Entity.pas"/>
+    <File Path="Source\Infrastructure\Produto\Services"/>
+    <File Path="Source\Infrastructure\Produto\Services\Produto.Service.pas"/>
+    <File Path="Source\Presentation"/>
+    <File Path="Source\Presentation\Controller"/>
+    <File Path="Source\Presentation\Controller\Produto.Controller.pas"/>
+    <File Path="Source\Presentation\View"/>
+    <File Path="Source\Presentation\View\Main.View.pas"/>
+    <File Path="Source\Presentation\View\Main.View.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

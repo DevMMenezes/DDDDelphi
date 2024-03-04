@@ -1,0 +1,34 @@
+unit IProduto.Entity;
+
+interface
+
+type
+  IProduto = interface
+    ['{1F2EAC18-FB82-4576-A590-AF708CE17C7D}']
+  end;
+
+  TProduto = class(TInterfacedObject, IProduto)
+
+  private
+    FID: Integer;
+    FDescricao: String;
+    FCodigoBarra: String;
+    FIDCadastro: String;
+
+  public
+
+    property ID: Integer read FID;
+    property Descricao: String read FDescricao;
+    property CodigoBarra: String read FCodigoBarra;
+    property IDCadastro: String read FIDCadastro;
+
+    function SetID(const aValue: Integer): IProduto;
+    function SetDescricao(const aValue: String): IProduto;
+    function SetCodigoBarra(const aValue: String): IProduto;
+    function SetIdCadastro(const aValue: String): IProduto;
+
+  end;
+
+implementation
+
+end.

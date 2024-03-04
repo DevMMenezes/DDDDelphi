@@ -1,0 +1,19 @@
+unit IProduto.Entity;
+
+interface
+
+uses
+  Produto.Entity;
+
+type
+  IProdutoEntity = interface
+    ['{1F2EAC18-FB82-4576-A590-AF708CE17C7D}']
+    function SetID(const aValue: Integer): TProdutoEntity;
+    function SetDescricao(const aValue: String): TProdutoEntity;
+    function SetCodigoBarra(const aValue: String): TProdutoEntity;
+    function SetIdCadastro(const aValue: String): TProdutoEntity;
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,64 @@
+unit ServiceBase;
+
+interface
+
+uses IServiceBase,
+  Produto.Entity,
+  SimpleInterface,
+  SimpleDAO,
+  SimpleAttributes,
+  SimpleQueryFiredac,
+  DMDataModule,
+  System.TypInfo;
+
+type
+  TServiceBase = class(TInterfacedObject, IService)
+
+  public
+    class function New: IService;
+    function FindAll(aEntity: TInterfacedObject): IService; overload;
+    function FindByID(): IService;
+    function Insert(): IService;
+    function Update(): IService;
+    function Delete(): IService;
+  end;
+
+implementation
+
+{ TServiceBase }
+
+function TServiceBase.Delete: IService;
+begin
+
+end;
+
+function TServiceBase.FindAll(aEntity: TInterfacedObject): IService;
+var
+  Conexao: iSimpleQuery;
+  DAOEntity: iSimpleDAO<aEntity>;
+begin
+  Conexao := TSimpleQueryFiredac.New(DMData.FBConnection);
+
+end;
+
+function TServiceBase.FindByID: IService;
+begin
+
+end;
+
+function TServiceBase.Insert: IService;
+begin
+
+end;
+
+class function TServiceBase.New: IService;
+begin
+  Result := Self.Create;
+end;
+
+function TServiceBase.Update: IService;
+begin
+
+end;
+
+end.

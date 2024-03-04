@@ -1,0 +1,13 @@
+unit IService;
+
+interface
+
+type
+  IService = interface
+    function FindAll(): IService;
+    function FindByID(): IService;
+  end;
+
+implementation
+
+end.

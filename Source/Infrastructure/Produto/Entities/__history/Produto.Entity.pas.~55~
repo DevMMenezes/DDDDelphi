@@ -1,0 +1,84 @@
+unit Produto.Entity;
+
+interface
+
+uses
+  SimpleAttributes, IProduto.Entity;
+
+type
+{$M+}
+
+  [Tabela('PRODUTO')]
+  TProdutoEntity = class(TInterfacedObject, IProdutoEntity)
+
+  private
+    FID: Integer;
+    FDescricao: String;
+    FCodigoBarra: String;
+    FIDCadastro: String;
+
+    function SetID(const aValue: Integer): IProdutoEntity;
+    function SetDescricao(const aValue: String): IProdutoEntity;
+    function SetCodigoBarra(const aValue: String): IProdutoEntity;
+    function SetIdCadastro(const aValue: String): IProdutoEntity;
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New : IProdutoEntity;
+
+  published
+    [Campo('ID'), PK]
+    property ID: Integer read FID;
+    [Campo('DESCRICAO'), NotNull]
+    property Descricao: String read FDescricao;
+    [Campo('CODIGO_BARRAS'), NotNull]
+    property CodigoBarra: String read FCodigoBarra;
+    [Campo('ID_CADASTRO'), NotNull]
+    property IDCadastro: String read FIDCadastro;
+  end;
+
+implementation
+
+{ IProdutoEntity }
+
+constructor TProdutoEntity.Create;
+begin
+  inherited;
+end;
+
+destructor TProdutoEntity.Destroy;
+begin
+  inherited;
+end;
+
+class function TProdutoEntity.New: IProdutoEntity;
+begin
+Result := Self.Create;
+end;
+
+function TProdutoEntity.SetCodigoBarra(const aValue: String): IProdutoEntity;
+begin
+  FCodigoBarra := aValue;
+  Result := Self;
+end;
+
+function TProdutoEntity.SetDescricao(const aValue: String): IProdutoEntity;
+begin
+  FDescricao := aValue;
+  Result := Self;
+end;
+
+function TProdutoEntity.SetID(const aValue: Integer): IProdutoEntity;
+begin
+  FID := aValue;
+  Result := Self;
+end;
+
+function TProdutoEntity.SetIdCadastro(const aValue: String): IProdutoEntity;
+begin
+  FIDCadastro := aValue;
+  Result := Self;
+end;
+
+end.
