@@ -20,6 +20,8 @@ type
     class function New: TProdutoController;
     constructor Create;
     destructor Destroy; override;
+
+    function SumValues(X, Y: Integer): Integer;
   end;
 
 implementation
@@ -71,6 +73,11 @@ end;
 class function TProdutoController.New: TProdutoController;
 begin
   Result := Self.Create;
+end;
+
+function TProdutoController.SumValues(X, Y: Integer): Integer;
+begin
+  Result := X + Y;
 end;
 
 function TProdutoController.Update(aProduto: TProdutoEntity): Boolean;

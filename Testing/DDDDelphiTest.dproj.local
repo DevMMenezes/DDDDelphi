@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/01/28 11:24:43.000.306,=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/03/05 09:49:35.816,=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/03/05 09:50:42.890,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Testing\TestProdutoController.pas=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/03/05 09:50:59.854,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Testing\DDDDelphiTest.dproj=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/03/05 09:52:12.488,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Presentation\Controller\Produto.Controller.pas</Transaction>
+    <Transaction>2024/03/05 09:52:57.902,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Entities\IProduto.Entity.pas</Transaction>
+    <Transaction>2024/03/05 09:53:09.240,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Services\IProduto.Service.pas</Transaction>
+    <Transaction>2024/03/05 09:54:08.857,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DMDataModule.pas</Transaction>
+    <Transaction>2024/03/05 09:54:23.226,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Produto\Entities\Produto.Entity.pas</Transaction>
+    <Transaction>2024/03/05 09:54:36.814,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Produto\Services\Produto.Service.pas</Transaction>
+    <Transaction>2024/03/05 09:55:26.038,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Presentation\Controller\Produto.Controller.pas</Transaction>
+    <Transaction>2024/03/05 09:55:46.822,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Services\IProduto.Service.pas</Transaction>
+    <Transaction>2024/03/05 09:56:25.604,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\Entities\IProduto.Entity.pas</Transaction>
+    <Transaction>2024/03/05 09:56:51.850,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Produto\Entities\Produto.Entity.pas</Transaction>
+    <Transaction>2024/03/05 09:57:46.414,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Produto\Services\Produto.Service.pas</Transaction>
+    <Transaction>2024/03/05 09:58:03.311,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DMDataModule.pas</Transaction>
+  </Transactions>
+</BorlandProject>
