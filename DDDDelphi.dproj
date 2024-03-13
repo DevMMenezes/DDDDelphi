@@ -119,6 +119,8 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Source\Presentation\Controller\Produto.Controller.pas"/>
+        <DCCReference Include="Source\Infrastructure\ServiceBase.pas"/>
+        <DCCReference Include="Source\Domain\IServiceBase.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

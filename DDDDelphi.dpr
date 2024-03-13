@@ -9,7 +9,9 @@ uses
   Produto.Service in 'Source\Infrastructure\Produto\Services\Produto.Service.pas',
   IProduto.Service in 'Source\Domain\Services\IProduto.Service.pas',
   Main.View in 'Source\Presentation\View\Main.View.pas' {vMain},
-  Produto.Controller in 'Source\Presentation\Controller\Produto.Controller.pas';
+  Produto.Controller in 'Source\Presentation\Controller\Produto.Controller.pas',
+  ServiceBase in 'Source\Infrastructure\ServiceBase.pas',
+  IServiceBase in 'Source\Domain\IServiceBase.pas';
 
 begin
 

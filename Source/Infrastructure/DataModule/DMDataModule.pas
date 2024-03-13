@@ -19,6 +19,8 @@ type
   public
     { Public declarations }
     function GetQuery: TFDQuery;
+    function GetDataSet: TDataSet;
+
   end;
 
 var
@@ -29,6 +31,12 @@ implementation
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 {$R *.dfm}
 { TDMData }
+
+function TDMData.GetDataSet: TDataSet;
+begin
+  Result := TDataSet.Create(nil);
+  Result.Close;
+end;
 
 function TDMData.GetQuery: TFDQuery;
 begin

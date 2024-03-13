@@ -2,52 +2,60 @@ unit ServiceBase;
 
 interface
 
-uses IServiceBase,
+uses
   SimpleInterface,
   SimpleDAO,
   SimpleAttributes,
   SimpleQueryFiredac,
-  Produto.Entity,
-  Data.DB, FireDAC.Comp.Client;
+  Data.DB,
+  FireDAC.Comp.Client,
+  FireDAC.Comp.DataSet;
 
 type
-  TServiceBase<T: class, constructor> = class(TInterfacedObject, IService<T>)
+  TServiceBase<T: class, constructor> = class
   private
-    FParent: T;
     FConexao: TFDConnection;
     FConn: iSimpleQuery;
-    FDAOEntity: iSimpleDAO<T>;
+    FDAO: iSimpleDAO<T>;
     FDataSource: TDataSource;
+
   public
-    constructor Create(Parent: T);
+    constructor Create;
     destructor Destroy; override;
-    class function New: IService<T>;
-    function FindAll(): TDataSet;
-    function FindByID(ADataSet: TDataSet): TDataSet;
-    function Insert(): IService<T>;
-    function Update(): IService<T>;
-    function Delete(): IService<T>;
+    procedure FindAll(aMemTable: TFDMemTable);
+    procedure FindByID(aMemTable: TFDMemTable; aID: Integer);
+    function Insert(aValue: T): Boolean;
+    function Update(aValue: T): Boolean;
+    function Delete(aValue: T): Boolean;
   end;
 
 implementation
 
 uses
-  Produto.Service, System.SysUtils, DMDataModule, Main;
+  Produto.Service, System.SysUtils, DMDataModule;
 
 { TServiceBase<T> }
 
-constructor TServiceBase<T>.Create(Parent: T);
+constructor TServiceBase<T>.Create;
 begin
-  FParent := Parent;
   FDataSource := TDataSource.Create(nil);
   FConexao := DMData.FBConnection;
   FConn := TSimpleQueryFiredac.New(FConexao);
-  FDAOEntity := TSimpleDAO<T>.New(FConn).DataSource(FDataSource);
+  FDAO := TSimpleDAO<T>.New(FConn).DataSource(FDataSource);
 end;
 
-function TServiceBase<T>.Delete: IService<T>;
+function TServiceBase<T>.Delete(aValue: T): Boolean;
 begin
-
+  try
+    FDAO.Delete(aValue);
+    Result := True;
+  except
+    on E: Exception do
+    begin
+      Result := False;
+      raise Exception.Create(E.Message);
+    end;
+  end;
 end;
 
 destructor TServiceBase<T>.Destroy;
@@ -56,12 +64,25 @@ begin
   inherited;
 end;
 
-function TServiceBase<T>.FindAll(): TDataSet;
+procedure TServiceBase<T>.FindAll(aMemTable: TFDMemTable);
 begin
   try
-    FDAOEntity.Find;
+    FDAO.Find(False);
+    aMemTable.CopyDataSet(FDataSource.DataSet, [coStructure, coRestart,
+      coAppend]);
+  except
+    on E: Exception do
+      raise Exception.Create(E.Message);
+  end;
+end;
 
-    Result := FDataSource.DataSet;
+procedure TServiceBase<T>.FindByID(aMemTable: TFDMemTable; aID: Integer);
+begin
+
+  try
+    FDAO.SQL.Where('ID = ' + IntToStr(aID)).&End.Find(False);
+    aMemTable.CopyDataSet(FDataSource.DataSet, [coStructure, coRestart,
+      coAppend]);
   except
     on E: Exception do
       raise Exception.Create(E.Message);
@@ -69,24 +90,33 @@ begin
 
 end;
 
-function TServiceBase<T>.FindByID(ADataSet: TDataSet): TDataSet;
+function TServiceBase<T>.Insert(aValue: T): Boolean;
 begin
 
+  try
+    FDAO.Insert(aValue);
+    Result := True;
+  except
+    on E: Exception do
+    begin
+      Result := False;
+      raise Exception.Create(E.Message);
+    end;
+  end;
 end;
 
-function TServiceBase<T>.Insert: IService<T>;
+function TServiceBase<T>.Update(aValue: T): Boolean;
 begin
-
-end;
-
-class function TServiceBase<T>.New: IService<T>;
-begin
-  Result := Self.Create();
-end;
-
-function TServiceBase<T>.Update: IService<T>;
-begin
-
+  try
+    FDAO.Update(aValue);
+    Result := True;
+  except
+    on E: Exception do
+    begin
+      Result := False;
+      raise Exception.Create(E.Message);
+    end;
+  end;
 end;
 
 end.

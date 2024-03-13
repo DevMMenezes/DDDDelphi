@@ -28,10 +28,10 @@
     <Transaction>2024/02/18 22:10:44.000.398,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
     <Transaction>2024/02/18 22:11:04.000.871,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\Services\ServiceBase.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
     <Transaction>2024/02/18 22:20:15.000.383,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
-    <Transaction>2024/02/18 22:21:01.000.246,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.dfm=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.dfm</Transaction>
     <Transaction>2024/02/18 22:21:01.000.246,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
-    <Transaction>2024/02/18 22:22:05.000.520,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.pas</Transaction>
+    <Transaction>2024/02/18 22:21:01.000.246,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.dfm=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.dfm</Transaction>
     <Transaction>2024/02/18 22:22:05.000.520,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.dfm=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.dfm</Transaction>
+    <Transaction>2024/02/18 22:22:05.000.520,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.pas</Transaction>
     <Transaction>2024/02/18 22:37:44.000.111,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.pas</Transaction>
     <Transaction>2024/02/18 23:06:15.000.468,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DMDataModule.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.pas</Transaction>
     <Transaction>2024/02/18 23:06:15.000.468,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DMDataModule.dfm=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\DataModule\DM.DataModule.dfm</Transaction>
@@ -50,6 +50,9 @@
     <Transaction>2024/03/01 17:09:54.000.467,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Presentation\View\Main.View.pas</Transaction>
     <Transaction>2024/03/01 17:34:24.000.960,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
     <Transaction>2024/03/01 17:34:47.000.152,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Presentation\Controller\Produto.Controller.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/03/10 20:34:01.000.176,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Infrastructure\ServiceBase.pas</Transaction>
+    <Transaction>2024/03/10 21:08:56.000.735,=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
+    <Transaction>2024/03/10 21:09:18.000.975,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Source\Domain\IServiceBase.pas=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Unit1.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Source"/>
@@ -60,6 +63,7 @@
     <File Path="Source\Domain\Enums\EProduto.Enum.Pas"/>
     <File Path="Source\Domain\Services"/>
     <File Path="Source\Domain\Services\IProduto.Service.pas"/>
+    <File Path="Source\Domain\IServiceBase.pas"/>
     <File Path="Source\Infrastructure"/>
     <File Path="Source\Infrastructure\DataModule"/>
     <File Path="Source\Infrastructure\DataModule\DMDataModule.pas"/>
@@ -69,6 +73,7 @@
     <File Path="Source\Infrastructure\Produto\Entities\Produto.Entity.pas"/>
     <File Path="Source\Infrastructure\Produto\Services"/>
     <File Path="Source\Infrastructure\Produto\Services\Produto.Service.pas"/>
+    <File Path="Source\Infrastructure\ServiceBase.pas"/>
     <File Path="Source\Presentation"/>
     <File Path="Source\Presentation\Controller"/>
     <File Path="Source\Presentation\Controller\Produto.Controller.pas"/>

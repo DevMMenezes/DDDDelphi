@@ -1,0 +1,94 @@
+unit ServiceBase;
+
+interface
+
+uses
+  SimpleInterface,
+  SimpleDAO,
+  SimpleAttributes,
+  SimpleQueryFiredac,
+  Produto.Entity,
+  Data.DB,
+  FireDAC.Comp.Client, FireDAC.Comp.DataSet;
+
+type
+  TServiceBase<T: class, constructor> = class
+  private
+    FConexao: TFDConnection;
+    FConn: iSimpleQuery;
+    FDAO: iSimpleDAO<T>;
+    FDataSource: TDataSource;
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    procedure FindAll(aMemTable: TFDMemTable);
+    function FindByID(aID: Integer): TDataSet;
+    function Insert(aValue: T): Boolean;
+    function Update(aValue: T): Boolean;
+    function Delete(aValue: T): Boolean;
+  end;
+
+implementation
+
+uses
+  Produto.Service, System.SysUtils, DMDataModule;
+
+{ TServiceBase<T> }
+
+constructor TServiceBase<T>.Create;
+begin
+  FDataSource := TDataSource.Create(nil);
+  FConexao := DMData.FBConnection;
+  FConn := TSimpleQueryFiredac.New(FConexao);
+  FDAO := TSimpleDAO<T>.New(FConn).DataSource(FDataSource);
+end;
+
+function TServiceBase<T>.Delete(aValue: T): Boolean;
+begin
+
+end;
+
+destructor TServiceBase<T>.Destroy;
+begin
+  FDataSource.DisposeOf;
+  inherited;
+end;
+
+procedure TServiceBase<T>.FindAll(aMemTable: TFDMemTable);
+begin
+  try
+    FDAO.Find(False);
+    aMemTable.CopyDataSet(FDataSource.DataSet, [coStructure, coRestart,
+      coAppend]);
+  except
+    on E: Exception do
+      raise Exception.Create(E.Message);
+  end;
+end;
+
+procedure TServiceBase<T>.FindByID(aMemTable: TFDMemTable; aID: Integer);
+begin
+
+  try
+    FDAO.Find(False);
+    aMemTable.CopyDataSet(FDataSource.DataSet, [coStructure, coRestart,
+      coAppend]);
+  except
+    on E: Exception do
+      raise Exception.Create(E.Message);
+  end;
+
+end;
+
+function TServiceBase<T>.Insert(aValue: T): Boolean;
+begin
+
+end;
+
+function TServiceBase<T>.Update(aValue: T): Boolean;
+begin
+
+end;
+
+end.

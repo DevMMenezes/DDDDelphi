@@ -1,0 +1,20 @@
+unit IServiceBase;
+
+interface
+
+uses
+  Data.DB, Generics.Collections;
+
+type
+  IServicesBase = interface
+    ['{6D611F59-BD99-4CBA-8FB3-D030F0770248}']
+   function FindAll(): TDataSet;
+    function FindByID(aID: Integer): TDataSet;
+    function Insert(aValue: TClass): Boolean;
+    function Update(aValue: TClass): Boolean;
+    function Delete(aValue: TClass): Boolean;
+  end;
+
+implementation
+
+end.

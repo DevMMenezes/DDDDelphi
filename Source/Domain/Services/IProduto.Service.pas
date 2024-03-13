@@ -3,13 +3,13 @@ unit IProduto.Service;
 interface
 
 uses
-  Data.DB, Produto.Entity;
+  Data.DB, Produto.Entity, FireDAC.Comp.Client;
 
 type
   IProdutoService = interface
-    ['{7235F61B-F92C-4221-8C82-F7208B9572FD}']
-    function FindAll(): TDataSet;
-    function FindByID(aID: Integer): TDataSet;
+   ['{CBEB1259-C8FB-42AB-9E93-6FFB07923E60}']
+    procedure FindAll(aMemTable : TFDMemTable);
+    procedure FindByID(aMemTable: TFDMemTable ; aID: Integer);
     function Insert(aProduto : TProdutoEntity): Boolean;
     function Update(aProduto : TProdutoEntity): Boolean;
     function Delete(aProduto : TProdutoEntity): Boolean;

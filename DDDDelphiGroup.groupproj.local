@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2024/03/05 09:05:18.000.073,C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\DevMMenezes\Projetos Pessoais\DDDDelphi\DDDDelphiGroup.groupproj</Transaction>
+    <Transaction>2024/03/05 09:05:18.000.073,C:\DevMMenezes\Projetos Pessoais\DDDDelphi\DDDDelphiGroup.groupproj=C:\Users\DevMMenezes\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="C:\DevMMenezes\Projetos Pessoais\DDDDelphi\Testing\DDDDelphiTest.dproj"/>
+		<Projects ActiveProject="C:\DevMMenezes\Projetos Pessoais\DDDDelphi\DDDDelphi.dproj"/>
 	</Default.Personality>
 </BorlandProject>

@@ -1,0 +1,89 @@
+unit Produto.Controller;
+
+interface
+
+uses
+  IProduto.Service,
+  Produto.Entity,
+  Produto.Service,
+  System.SysUtils, ServiceBase, DMDataModule,
+  FireDAC.Comp.Client, FireDAC.Comp.DataSet;
+
+type
+  TProdutoController = class(TInterfacedObject, IProdutoService)
+  private
+  public
+    procedure FindAll(aMemTable: TFDMemTable);
+    procedure FindByID(aMemTable: TFDMemTable; aID: Integer);
+    function Insert(aProduto: TProdutoEntity): Boolean;
+    function Update(aProduto: TProdutoEntity): Boolean;
+    function Delete(aProduto: TProdutoEntity): Boolean;
+    class function New: IProdutoService;
+
+    function SumValues(X, Y: Integer): Integer;
+  end;
+
+implementation
+
+{ TProdutoController }
+
+function TProdutoController.Delete(aProduto: TProdutoEntity): Boolean;
+begin
+  { Regra de negócio }
+  Result := TProdutoService.New.Delete(aProduto);
+end;
+
+procedure TProdutoController.FindAll(aMemTable: TFDMemTable);
+var
+  oServiceBase: TServiceBase<TProdutoEntity>;
+begin
+  { Regra de negócio }
+  oServiceBase := TServiceBase<TProdutoEntity>.Create;
+  try
+    oServiceBase.FindAll(aMemTable);
+  finally
+    oServiceBase.Free;
+  end;
+end;
+
+procedure TProdutoController.FindByID(aMemTable: TFDMemTable; aID: Integer);
+var
+  oServiceBase: TServiceBase<TProdutoEntity>;
+begin
+  { Regra de negócio }
+  oServiceBase := TServiceBase<TProdutoEntity>.Create;
+  try
+    oServiceBase.FindByID(aMemTable, aID);
+  finally
+    oServiceBase.Free;
+  end;
+end;
+
+function TProdutoController.Insert(aProduto: TProdutoEntity): Boolean;
+begin
+
+  if aProduto.CodigoBarra = '1234' then
+    raise Exception.Create
+      ('Não foi possível cadastrar um produto com este código de barras.');
+
+  { Regra de negócio }
+  Result := TProdutoService.New.Insert(aProduto);
+end;
+
+class function TProdutoController.New: IProdutoService;
+begin
+  Result := Self.Create;
+end;
+
+function TProdutoController.SumValues(X, Y: Integer): Integer;
+begin
+  Result := X + Y;
+end;
+
+function TProdutoController.Update(aProduto: TProdutoEntity): Boolean;
+begin
+  { Regra de negócio }
+  Result := TProdutoService.New.Update(aProduto);
+end;
+
+end.
