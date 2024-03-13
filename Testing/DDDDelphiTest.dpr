@@ -19,7 +19,8 @@ uses
   Produto.Entity in '..\Source\Infrastructure\Produto\Entities\Produto.Entity.pas',
   IProduto.Service in '..\Source\Domain\Services\IProduto.Service.pas',
   Produto.Service in '..\Source\Infrastructure\Produto\Services\Produto.Service.pas',
-  DMDataModule in '..\Source\Infrastructure\DataModule\DMDataModule.pas' {DMData: TDataModule};
+  DMDataModule in '..\Source\Infrastructure\DataModule\DMDataModule.pas' {DMData: TDataModule},
+  ServiceBase in '..\Source\Infrastructure\ServiceBase.pas';
 
 {$IFNDEF TESTINSIGHT}
 var
